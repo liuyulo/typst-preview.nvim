@@ -1,6 +1,7 @@
 local M = {
   opts = {
     open_cmd = nil,
+    port = 0,
     invert_colors = 'never',
     debug = false,
     dependencies_bin = {

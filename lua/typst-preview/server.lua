@@ -39,7 +39,7 @@ function M.spawn(bufnr, callback, set_link)
       '--control-plane-host',
       '127.0.0.1:0',
       '--static-file-host',
-      '127.0.0.1:0',
+      '127.0.0.1:' .. tostring(config.opts.port),
       '--root',
       config.opts.get_root(bufnr),
       file_path,
